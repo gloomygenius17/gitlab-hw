@@ -30,37 +30,57 @@
 Зарегистрируйте gitlab-runner для этого проекта и запустите его в режиме Docker. Раннер можно регистрировать и запускать на той же виртуальной машине, на которой запущен GitLab.
 В качестве ответа в репозиторий шаблона с решением добавьте скриншоты с настройками раннера в проекте.
 
-<img width="1213" height="789" alt="image" src="https://github.com/user-attachments/assets/221d26ee-a39d-4d41-8813-b6323a2e9db7" />
-<img width="546" height="388" alt="image" src="https://github.com/user-attachments/assets/15c3e2fa-8c81-4b75-a702-082aa5d098f4" />
+<img width="876" height="684" alt="image" src="https://github.com/user-attachments/assets/8e3a869f-22cc-4aeb-8eb2-3fc5aab95c94" />
+<img width="542" height="227" alt="image" src="https://github.com/user-attachments/assets/e36f5d63-14f6-4e64-8620-9b1b15025024" />
+<img width="1072" height="1039" alt="image" src="https://github.com/user-attachments/assets/71b4e9ea-d029-4883-94be-b008e7c40e7d" />
 
 
 
+Задание 2
+Что нужно сделать:
+
+Запушьте репозиторий на GitLab, изменив origin. Это изучалось на занятии по Git.
+Создайте .gitlab-ci.yml, описав в нём все необходимые, на ваш взгляд, этапы.
+В качестве ответа в шаблон с решением добавьте:
+
+файл gitlab-ci.yml для своего проекта или вставьте код в соответствующее поле в шаблоне;
+скриншоты с успешно собранными сборками.
+
+<img width="1256" height="709" alt="image" src="https://github.com/user-attachments/assets/00311701-e813-43b7-9aee-78d771395b0c" />
+<img width="701" height="385" alt="image" src="https://github.com/user-attachments/assets/5fb0acd5-a153-4987-8baa-4c9e153a22cd" />
+
+stages:
+  - test
+  - build
+  - deploy
+
+test-job:
+  stage: test
+  script:
+    - echo "🚀 Запуск тестов"
+    - echo "Тесты выполнены успешно!"
+  tags:
+    - docker
+
+build-job:
+  stage: build
+  script:
+    - echo "🏗️ Сборка проекта"
+    - echo "Сборка завершена!"
+  tags:
+    - docker
+
+deploy-job:
+  stage: deploy
+  script:
+    - echo "🎯 Деплой приложения"
+    - echo "Деплой успешно завершен! 🎉"
+  tags:
+    - docker
+  when: manual
 
 
-### Задание 2
 
-`Приведите ответ в свободной форме........`
-
-1. `Заполните здесь этапы выполнения, если требуется ....`
-2. `Заполните здесь этапы выполнения, если требуется ....`
-3. `Заполните здесь этапы выполнения, если требуется ....`
-4. `Заполните здесь этапы выполнения, если требуется ....`
-5. `Заполните здесь этапы выполнения, если требуется ....`
-6. 
-
-```
-Поле для вставки кода...
-....
-....
-....
-....
-```
-
-`При необходимости прикрепитe сюда скриншоты
-![Название скриншота 2](ссылка на скриншот 2)`
-
-
----
 
 ### Задание 3
 
