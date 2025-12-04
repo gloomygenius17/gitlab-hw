@@ -1,4 +1,4 @@
-# Домашнее задание к занятию "`Git`" - `Петрикин Дмитрий`
+# Домашнее задание к занятию "`Zabbix`" - `Петрикин Дмитрий`
 
 
 ### Инструкция по выполнению домашнего задания
@@ -23,61 +23,33 @@
 ---
 
 Задание 1
-Что нужно сделать:
+Установите Zabbix Server с веб-интерфейсом.
 
-Разверните GitLab локально, используя Vagrantfile и инструкцию, описанные в этом репозитории.
-Создайте новый проект и пустой репозиторий в нём.
-Зарегистрируйте gitlab-runner для этого проекта и запустите его в режиме Docker. Раннер можно регистрировать и запускать на той же виртуальной машине, на которой запущен GitLab.
-В качестве ответа в репозиторий шаблона с решением добавьте скриншоты с настройками раннера в проекте.
+Процесс выполнения
+Выполняя ДЗ, сверяйтесь с процессом отражённым в записи лекции.
+Установите PostgreSQL. Для установки достаточна та версия, что есть в системном репозитороии Debian 11.
+Пользуясь конфигуратором команд с официального сайта, составьте набор команд для установки последней версии Zabbix с поддержкой PostgreSQL и Apache.
+Выполните все необходимые команды для установки Zabbix Server и Zabbix Web Server.
+<img width="1600" height="1310" alt="Screenshot from 2025-12-04 19-49-17" src="https://github.com/user-attachments/assets/0df5765b-500b-4995-a4d2-3ae12706ab89" />
 
-<img width="876" height="684" alt="image" src="https://github.com/user-attachments/assets/8e3a869f-22cc-4aeb-8eb2-3fc5aab95c94" />
-<img width="542" height="227" alt="image" src="https://github.com/user-attachments/assets/e36f5d63-14f6-4e64-8620-9b1b15025024" />
-<img width="1072" height="1039" alt="image" src="https://github.com/user-attachments/assets/71b4e9ea-d029-4883-94be-b008e7c40e7d" />
 
 
 
 Задание 2
-Что нужно сделать:
+Установите Zabbix Agent на два хоста.
 
-Запушьте репозиторий на GitLab, изменив origin. Это изучалось на занятии по Git.
-Создайте .gitlab-ci.yml, описав в нём все необходимые, на ваш взгляд, этапы.
-В качестве ответа в шаблон с решением добавьте:
+Процесс выполнения
+Выполняя ДЗ, сверяйтесь с процессом отражённым в записи лекции.
+Установите Zabbix Agent на 2 вирт.машины, одной из них может быть ваш Zabbix Server.
+Добавьте Zabbix Server в список разрешенных серверов ваших Zabbix Agentов.
+Добавьте Zabbix Agentов в раздел Configuration > Hosts вашего Zabbix Servera.
+Проверьте, что в разделе Latest Data начали появляться данные с добавленных агентов.
 
-файл gitlab-ci.yml для своего проекта или вставьте код в соответствующее поле в шаблоне;
-скриншоты с успешно собранными сборками.
+<img width="1706" height="1317" alt="Screenshot from 2025-12-04 21-46-57" src="https://github.com/user-attachments/assets/6447febc-f776-41ea-b330-00d9902411c8" />
+<img width="1706" height="1317" alt="Screenshot from 2025-12-04 21-50-26" src="https://github.com/user-attachments/assets/daef5e6a-8d14-4c5b-84e9-5768cf82d4b8" />
+<img width="1706" height="1317" alt="Screenshot from 2025-12-04 21-51-38" src="https://github.com/user-attachments/assets/74a40e84-04b1-4312-adc0-c17502032060" />
 
-<img width="1256" height="709" alt="image" src="https://github.com/user-attachments/assets/00311701-e813-43b7-9aee-78d771395b0c" />
-<img width="701" height="385" alt="image" src="https://github.com/user-attachments/assets/5fb0acd5-a153-4987-8baa-4c9e153a22cd" />
 
-stages:
-  - test
-  - build
-  - deploy
-
-test-job:
-  stage: test
-  script:
-    - echo "🚀 Запуск тестов"
-    - echo "Тесты выполнены успешно!"
-  tags:
-    - docker
-
-build-job:
-  stage: build
-  script:
-    - echo "🏗️ Сборка проекта"
-    - echo "Сборка завершена!"
-  tags:
-    - docker
-
-deploy-job:
-  stage: deploy
-  script:
-    - echo "🎯 Деплой приложения"
-    - echo "Деплой успешно завершен! 🎉"
-  tags:
-    - docker
-  when: manual
 
 
 
