@@ -31,6 +31,7 @@
 Пользуясь конфигуратором команд с официального сайта, составьте набор команд для установки последней версии Zabbix с поддержкой PostgreSQL и Apache.
 Выполните все необходимые команды для установки Zabbix Server и Zabbix Web Server.
 <img width="1600" height="1310" alt="Screenshot from 2025-12-04 19-49-17" src="https://github.com/user-attachments/assets/0df5765b-500b-4995-a4d2-3ae12706ab89" />
+<img width="1131" height="1025" alt="image" src="https://github.com/user-attachments/assets/086471ed-d10a-4654-86fa-bbd787a95af6" />
 
 
 
@@ -48,6 +49,7 @@
 <img width="1706" height="1317" alt="Screenshot from 2025-12-04 21-46-57" src="https://github.com/user-attachments/assets/6447febc-f776-41ea-b330-00d9902411c8" />
 <img width="1706" height="1317" alt="Screenshot from 2025-12-04 21-50-26" src="https://github.com/user-attachments/assets/daef5e6a-8d14-4c5b-84e9-5768cf82d4b8" />
 <img width="1706" height="1317" alt="Screenshot from 2025-12-04 21-51-38" src="https://github.com/user-attachments/assets/74a40e84-04b1-4312-adc0-c17502032060" />
+<img width="1143" height="1191" alt="image" src="https://github.com/user-attachments/assets/4ef03464-fec6-48bd-a03f-e6c6fcc169b9" />
 
 
 
