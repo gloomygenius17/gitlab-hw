@@ -31,7 +31,8 @@
 Создайте Item который будет собирать информацию об загрузке CPU в процентах
 Создайте Item который будет собирать информацию об загрузке RAM в процентах
 
-<img width="1256" height="560" alt="image" src="https://github.com/user-attachments/assets/20326458-ab77-42d8-a930-f175ba1e88c7" />
+<img width="1223" height="533" alt="image" src="https://github.com/user-attachments/assets/d178cec8-f03f-4577-8782-e473fa710cdf" />
+<img width="1257" height="265" alt="image" src="https://github.com/user-attachments/assets/064152ab-be25-4e2f-a272-4a514919f52a" />
 
 
 
