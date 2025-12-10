@@ -1,4 +1,4 @@
-# Домашнее задание к занятию "`Zabbix`" - `Петрикин Дмитрий`
+# Домашнее задание к занятию "`Zabbix 2`" - `Петрикин Дмитрий`
 
 
 ### Инструкция по выполнению домашнего задания
@@ -23,33 +23,30 @@
 ---
 
 Задание 1
-Установите Zabbix Server с веб-интерфейсом.
+Создайте свой шаблон, в котором будут элементы данных, мониторящие загрузку CPU и RAM хоста.
 
 Процесс выполнения
-Выполняя ДЗ, сверяйтесь с процессом отражённым в записи лекции.
-Установите PostgreSQL. Для установки достаточна та версия, что есть в системном репозитороии Debian 11.
-Пользуясь конфигуратором команд с официального сайта, составьте набор команд для установки последней версии Zabbix с поддержкой PostgreSQL и Apache.
-Выполните все необходимые команды для установки Zabbix Server и Zabbix Web Server.
-<img width="1600" height="1310" alt="Screenshot from 2025-12-04 19-49-17" src="https://github.com/user-attachments/assets/0df5765b-500b-4995-a4d2-3ae12706ab89" />
-<img width="1131" height="1025" alt="image" src="https://github.com/user-attachments/assets/086471ed-d10a-4654-86fa-bbd787a95af6" />
+Выполняя ДЗ сверяйтесь с процессом отражённым в записи лекции.
+В веб-интерфейсе Zabbix Servera в разделе Templates создайте новый шаблон
+Создайте Item который будет собирать информацию об загрузке CPU в процентах
+Создайте Item который будет собирать информацию об загрузке RAM в процентах
+
+<img width="1256" height="560" alt="image" src="https://github.com/user-attachments/assets/20326458-ab77-42d8-a930-f175ba1e88c7" />
 
 
 
 
 Задание 2
-Установите Zabbix Agent на два хоста.
+Добавьте в Zabbix два хоста и задайте им имена <фамилия и инициалы-1> и <фамилия и инициалы-2>. Например: ivanovii-1 и ivanovii-2.
 
 Процесс выполнения
-Выполняя ДЗ, сверяйтесь с процессом отражённым в записи лекции.
-Установите Zabbix Agent на 2 вирт.машины, одной из них может быть ваш Zabbix Server.
-Добавьте Zabbix Server в список разрешенных серверов ваших Zabbix Agentов.
-Добавьте Zabbix Agentов в раздел Configuration > Hosts вашего Zabbix Servera.
-Проверьте, что в разделе Latest Data начали появляться данные с добавленных агентов.
+Выполняя ДЗ сверяйтесь с процессом отражённым в записи лекции.
+Установите Zabbix Agent на 2 виртмашины, одной из них может быть ваш Zabbix Server
+Добавьте Zabbix Server в список разрешенных серверов ваших Zabbix Agentов
+Добавьте Zabbix Agentов в раздел Configuration > Hosts вашего Zabbix Servera
+Прикрепите за каждым хостом шаблон Linux by Zabbix Agent
+Проверьте что в разделе Latest Data начали появляться данные с добавленных агентов
 
-<img width="1706" height="1317" alt="Screenshot from 2025-12-04 21-46-57" src="https://github.com/user-attachments/assets/6447febc-f776-41ea-b330-00d9902411c8" />
-<img width="1706" height="1317" alt="Screenshot from 2025-12-04 21-50-26" src="https://github.com/user-attachments/assets/daef5e6a-8d14-4c5b-84e9-5768cf82d4b8" />
-<img width="1706" height="1317" alt="Screenshot from 2025-12-04 21-51-38" src="https://github.com/user-attachments/assets/74a40e84-04b1-4312-adc0-c17502032060" />
-<img width="1143" height="1191" alt="image" src="https://github.com/user-attachments/assets/4ef03464-fec6-48bd-a03f-e6c6fcc169b9" />
 
 
 
