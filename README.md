@@ -43,68 +43,11 @@
 
 скрипт:
 [скрипт.txt](https://github.com/user-attachments/files/24267047/default.txt)
-#!/bin/bash
 
-
-# Реальная проверка:
-WEB_PORT=80
-WEB_ROOT="/var/www/html"
-
-# Проверяем порт 80
-if ! ss -tln | grep -q ":80 "; then
-    echo "Port 80 is not listening"
-    exit 1
-fi
-
-# Проверяем index.html
-if [ ! -f "/var/www/html/index.html" ]; then
-    echo "index.html not found"
-    exit 1
-fi
-
-# Все проверки пройдены
-exit 0
 
 конфиг файл
 [keepalived.txt](https://github.com/user-attachments/files/24267071/keepalived.txt)
-global_defs {
-    router_id LVS_DEVEL
-    vrrp_skip_check_adv_addr
-    vrrp_strict
-    vrrp_garp_interval 0
-    vrrp_gna_interval 0
-}
 
-# Скрипт для проверки состояния веб-сервера
-vrrp_script check_web {
-    script "/etc/keepalived/check_web_server.sh"
-    interval 3
-    timeout 2
-    fall 2
-    rise 2
-    weight -50
-}
-
-vrrp_instance VI_1 {
-    state MASTER
-    interface enp0s8
-    virtual_router_id 15
-    priority 255
-    advert_int 1
-
-    authentication {
-        auth_type PASS
-        auth_pass 1111
-    }
-
-    virtual_ipaddress {
-        192.168.111.15/24
-    }
-    
-    track_script {
-        check_web
-    }
-}
 <img width="841" height="327" alt="image" src="https://github.com/user-attachments/assets/215d5ac1-f885-433f-ae86-774ce376c880" />
 
 
