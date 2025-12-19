@@ -42,6 +42,7 @@
 На проверку отправьте получившейся bash-скрипт и конфигурационный файл keepalived, а также скриншот с демонстрацией переезда плавающего ip на другой сервер в случае недоступности порта или файла index.html
 
 скрипт:
+[скрипт.txt](https://github.com/user-attachments/files/24267047/default.txt)
 #!/bin/bash
 
 
@@ -65,6 +66,7 @@ fi
 exit 0
 
 конфиг файл
+[keepalived.txt](https://github.com/user-attachments/files/24267071/keepalived.txt)
 global_defs {
     router_id LVS_DEVEL
     vrrp_skip_check_adv_addr
