@@ -1,4 +1,4 @@
-[haproxy.txt](https://github.com/user-attachments/files/24280592/haproxy.txt)[haproxy.txt](https://github.com/user-attachments/files/24280586/haproxy.txt)[haproxy.txt](https://github.com/user-attachments/files/24280585/haproxy.txt)# Домашнее задание к занятию "Кластеризация и балансировка нагрузки" - `Петрикин Дмитрий`
+[haproxy.txt](https://github.com/user-attachments/files/24280838/haproxy.txt)[haproxy.txt](https://github.com/user-attachments/files/24280592/haproxy.txt)[haproxy.txt](https://github.com/user-attachments/files/24280586/haproxy.txt)[haproxy.txt](https://github.com/user-attachments/files/24280585/haproxy.txt)# Домашнее задание к занятию "Кластеризация и балансировка нагрузки" - `Петрикин Дмитрий`
 
 
 ### Инструкция по выполнению домашнего задания
@@ -29,8 +29,7 @@
 На проверку направьте конфигурационный файл haproxy, скриншоты, где видно перенаправление запросов на разные серверы при обращении к HAProxy.
 
 конф файл 
-
-global
+[global
 	log /dev/log	local0
 	log /dev/log	local1 notice
 	chroot /var/lib/haproxy
@@ -95,6 +94,7 @@ listen web_tcp
 
 	server s1 127.0.0.1:8888 check inter 3s
 	server s2 127.0.0.1:9999 check inter 3s
+Uploading haproxy.txt…]()
 
 
 
@@ -112,7 +112,7 @@ HAproxy должен балансировать только тот http-тра�
 
 
 
-root@ubuntu:/etc/nginx/conf.d# cat /etc/haproxy/haproxy.cfg 
+[haproxy_zd2.txt](https://github.com/user-attachments/files/24280836/haproxy_zd2.txt)
 global
 	log /dev/log	local0
 	log /dev/log	local1 notice
