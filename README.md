@@ -1,4 +1,4 @@
-[haproxy.txt](https://github.com/user-attachments/files/24280838/haproxy.txt)[haproxy.txt](https://github.com/user-attachments/files/24280592/haproxy.txt)[haproxy.txt](https://github.com/user-attachments/files/24280586/haproxy.txt)[haproxy.txt](https://github.com/user-attachments/files/24280585/haproxy.txt)# Домашнее задание к занятию "Кластеризация и балансировка нагрузки" - `Петрикин Дмитрий`
+ Домашнее задание к занятию "Кластеризация и балансировка нагрузки" - `Петрикин Дмитрий`
 
 
 ### Инструкция по выполнению домашнего задания
@@ -47,7 +47,7 @@ HAproxy должен балансировать только тот http-тра�
 <img width="503" height="168" alt="image" src="https://github.com/user-attachments/assets/b1ba26f7-0f27-4c56-a036-408033ef59a2" />
 
 
-
+конф файл
 [haproxy_zd2.txt](https://github.com/user-attachments/files/24280836/haproxy_zd2.txt)
 
 
