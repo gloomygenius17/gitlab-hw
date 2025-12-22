@@ -28,7 +28,7 @@
 Настройте балансировку Round-robin на 4 уровне.
 На проверку направьте конфигурационный файл haproxy, скриншоты, где видно перенаправление запросов на разные серверы при обращении к HAProxy.
 
-конф файл 
+([файл конфигурации](configs/zd1/haproxy.cfg)) 
 
 
 
@@ -46,7 +46,7 @@ HAproxy должен балансировать только тот http-тра�
 
 
 конф файл
-
+([файл конфигурации](configs/zd2/haproxy.cfg)) 
 
 <img width="888" height="703" alt="image" src="https://github.com/user-attachments/assets/9baf787a-964c-4458-a179-666bbe03e2a7" />
 
