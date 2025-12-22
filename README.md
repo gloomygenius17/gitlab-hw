@@ -29,7 +29,6 @@
 На проверку направьте конфигурационный файл haproxy, скриншоты, где видно перенаправление запросов на разные серверы при обращении к HAProxy.
 
 конф файл 
-[haproxy.txt](https://github.com/user-attachments/files/24280840/haproxy.txt)
 
 
 
@@ -44,14 +43,14 @@
 HAproxy должен балансировать только тот http-трафик, который адресован домену example.local
 На проверку направьте конфигурационный файл haproxy, скриншоты, где видно перенаправление запросов на разные серверы при обращении к HAProxy c использованием домена example.local и без него.
 
-<img width="503" height="168" alt="image" src="https://github.com/user-attachments/assets/b1ba26f7-0f27-4c56-a036-408033ef59a2" />
 
 
 конф файл
-[haproxy_zd2.txt](https://github.com/user-attachments/files/24280836/haproxy_zd2.txt)
+
+
+<img width="888" height="703" alt="image" src="https://github.com/user-attachments/assets/9baf787a-964c-4458-a179-666bbe03e2a7" />
 
 
 
-<img width="836" height="783" alt="image" src="https://github.com/user-attachments/assets/1aabfac4-4350-4e61-b55d-0a67216a3d5a" />
 
 
