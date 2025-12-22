@@ -40,9 +40,7 @@
 Резервная копия размещается локально, в директории /tmp/backup
 На проверку направить файл crontab и скриншот с результатом работы утилиты.
 
-скрипт 
-
-<img width="1254" height="821" alt="image" src="https://github.com/user-attachments/assets/5296db33-1c93-4ef8-9958-542bbb4257b0" />
+скрипт
 
 
 
