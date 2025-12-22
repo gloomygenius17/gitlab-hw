@@ -1,0 +1,8 @@
+# Ежедневное резервное копирование домашней директории в 3:00
+0 3 * * * /bin/bash /home/petrikin.dp/backup.sh
+
+# Еженедельная проверка размера резервной копии в воскресенье в 4:00
+0 4 * * 0 du -sh /tmp/backup/ >> /var/log/backup_size.log
+
+# Очистка старых логов раз в месяц
+0 5 1 * * find /var/log/home_backup.log -mtime +30 -exec truncate -s 0 {} \;
