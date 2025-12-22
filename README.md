@@ -40,10 +40,12 @@
 Резервная копия размещается локально, в директории /tmp/backup
 На проверку направить файл crontab и скриншот с результатом работы утилиты.
 
-скрипт
+ ([скрипт](scripts/backup.sh))
+ ([crontab](crontab/crontab))
 
 
 
+<img width="906" height="988" alt="image" src="https://github.com/user-attachments/assets/97a5b950-ad4c-419f-bf39-a1955e84bcc5" />
 
 
 
