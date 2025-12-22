@@ -48,7 +48,8 @@ HAproxy должен балансировать только тот http-тра�
 конф файл
 ([файл конфигурации](configs/zd2/haproxy.cfg)) 
 
-<img width="913" height="647" alt="image" src="https://github.com/user-attachments/assets/dcfcde71-ceb2-490a-a42e-45a297aaa6f6" />
+<img width="864" height="552" alt="image" src="https://github.com/user-attachments/assets/e981d7ac-7919-4ce1-b4b0-25decfb416ac" />
+
 
 
 
