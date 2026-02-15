@@ -31,3 +31,11 @@ Master-Master - только если очень нужно писать одн�
 Выполните конфигурацию master-slave репликации, примером можно пользоваться из лекции.
 
 Приложите скриншоты конфигурации, выполнения работы: состояния и режимы работы серверов.
+
+<img width="599" height="296" alt="image" src="https://github.com/user-attachments/assets/74f4fa48-7926-4858-af34-d142a49d1a32" />
+
+<img width="1120" height="674" alt="image" src="https://github.com/user-attachments/assets/3015e1be-a8b7-4a1b-9d14-25cdc7b9b3b8" />
+
+<img width="1284" height="308" alt="image" src="https://github.com/user-attachments/assets/a2c0b9cc-e19d-41c0-b7f5-71fae0559723" />
+
+
