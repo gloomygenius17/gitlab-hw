@@ -23,16 +23,10 @@
 <img width="276" height="372" alt="image" src="https://github.com/user-attachments/assets/0e7d9ba6-c4ba-42db-90e3-519c1d0f21b8" />
 
 
-Какие уязвимости были вами обнаружены? (список со ссылками: достаточно трёх уязвимостей)
-vsftpd 2.3.4 Backdoor Command Execution
-Очень знаменитый бэкдор, вставленный в официальный архив vsftpd 2.3.4 в 2011 году. При отправке логина с улыбкой :)  открывается root-shell на порту 6200.
-→ https://www.exploit-db.com/exploits/17491
-UnrealIRCd 3.2.8.1 Backdoor Command Execution
-Бэкдор в версии UnrealIRCd, который позволяет выполнить любую команду от имени root при отправке "AB;" + команда.
-→ https://www.exploit-db.com/exploits/33819 (или связанный модуль в Metasploit)
-Samba 3.X usermap_script RCE (перед Samba 3.0.20 — usermap script)
-Критическая удалённая команда от root через параметр username map script (очень простой и надёжный эксплойт).
-→ https://www.exploit-db.com/exploits/16360
+Какие уязвимости были вами обнаружены? 
+vsftpd 2.3.4 Backdoor Command Execution  https://www.exploit-db.com/exploits/17491
+UnrealIRCd 3.2.8.1 Backdoor Command Execution  https://www.exploit-db.com/exploits/33819 
+Samba 3.X usermap_script RCE https://www.exploit-db.com/exploits/16360
 
 Задание 2
 Проведите сканирование Metasploitable в режимах SYN, FIN, Xmas, UDP.
